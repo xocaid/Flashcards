@@ -1,6 +1,9 @@
 import { useState } from "react";
 
-const SingleFlashCard = ({ singleFlashCard }) => {
+const SingleFlashCard = (props) => {
+  let singleFlashCard = props.singleFlashCard;
+  let number = props.number;
+
   const [flipCard, setFlipCard] = useState(true);
 
   const handleFlipCard = () => {
@@ -12,7 +15,7 @@ const SingleFlashCard = ({ singleFlashCard }) => {
       {flipCard ? (
         <div onClick={handleFlipCard}>
           <div className="question#">
-            <p>Question {singleFlashCard.id}</p>
+            <p>Question {singleFlashCard.id}/{number}</p>
           </div>
 
           <div className="questionDiv">

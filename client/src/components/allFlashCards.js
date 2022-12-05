@@ -27,7 +27,7 @@ const FlashCards = () => {
       <div className='allposts'>
         {flashcards.map((card, index) => {
           return (
-            <SingleFlashCard key={index} singleFlashCard={card} />
+            <SingleFlashCard key={index} singleFlashCard={card} number={flashcards.length}/>
           )
         }
         )}
