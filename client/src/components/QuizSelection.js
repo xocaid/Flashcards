@@ -33,14 +33,19 @@ function QuizSelection() {
       </div>
 
       <div className='quizselection-content'>
-        {technical && (
-          <div>
-            <AllCards />
-            </div>
-        )}
+        {technical &&(
+        <AllCards />
+      )}
+
+      {softSkills && (
+        <h1>Testing Soft Skills Text</h1>
+      )}
+
+      {combined && (
+        <h1>Testing Combined Text</h1>
+      )}
 
       </div>
-
     </div>
   )
 }

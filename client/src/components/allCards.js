@@ -1,5 +1,5 @@
 import { useState } from "react";
-import JavascriptQuiz from './Technical Quiz/JavascriptQuiz';
+import JavascriptQuiz from './Technical/JavascriptQuiz';
 
 
 function AllCards() {
