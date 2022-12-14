@@ -1,11 +1,11 @@
 import { useState, useEffect } from "react";
-import SingleFlashCard from "./singleFlashCard";
+import SingleFlashCard from "../singleFlashCard";
 
-const FlashCards = () => {
+const JavascriptQuiz = () => {
   const [flashcards, setFlashcards] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:8080/js")
+    fetch("http://localhost:8082/javascript")
       .then((response) => response.json())
       .then((singleCard) => {
         setFlashcards(singleCard);
@@ -35,4 +35,4 @@ const FlashCards = () => {
     </div>
   )
 }
-export default FlashCards;
+export default JavascriptQuiz;
